@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dark Code Website</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0d0d0d;
+        color: #ffffff;
+        scroll-behavior: smooth;
+    }
+
+    .section {
+        height: 100vh;
+        padding: 40px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #222;
+    }
+
+    h1 {
+        color: #00ffcc;
+        margin-bottom: 20px;
+    }
+
+    pre {
+        background: #111;
+        padding: 20px;
+        border-radius: 10px;
+        overflow-x: auto;
+        border: 1px solid #333;
+    }
+
+    code {
+        color: #00ff88;
+        font-size: 14px;
+    }
+
+    .nav {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+    .nav a {
+        display: block;
+        margin: 5px 0;
+        color: #00ffcc;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .nav a:hover {
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+    <a href="#A">Section A</a>
+    <a href="#B">Section B</a>
+    <a href="#C">Section C</a>
+</div>
+
+<!-- SECTION A -->
+<div class="section" id="A">
+    <h1>Section A</h1>
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 2, b = 3, c = 4, sum;
+
+    sum = a + b + c;
+
+    printf("Sum = %d\n", sum);
+
+    return 0;
+}
+    </code></pre>
+</div>
+
+<!-- SECTION B -->
+<div class="section" id="B">
+    <h1>Section B</h1>
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    int l = 5, w = 4;
+
+    printf("Area = %d", l * w);
+
+    return 0;
+}
+    </code></pre>
+</div>
+
+<!-- SECTION C -->
+<div class="section" id="C">
+    <h1>Section C</h1>
+    <pre><code>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("This is Section C");
+    return 0;
+}
+    </code></pre>
+</div>
+
+</body>
+</html>
